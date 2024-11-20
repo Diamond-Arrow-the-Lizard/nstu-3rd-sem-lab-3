@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "J9dESfCnpf/P8QF2y/LQBR/NcdqGhd9DyB60kMhrq317gstOTJCR3wCrHh/FEtoLnpwokRrIdx96Ub3NbVxDYQ==",
+  "success": true,
+  "projectFilePath": "/home/d-arrow/programming/nstu-3rd-sem-lab-3/EntityClass/EntityClass.csproj",
+  "expectedPackageFiles": [
+    "/home/d-arrow/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.10/microsoft.aspnetcore.app.ref.8.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}
