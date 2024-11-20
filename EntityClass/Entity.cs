@@ -1,9 +1,12 @@
 ﻿using System;
 namespace Entity;
 
-public class Entity  {
+public class Entity {
+    
+    // TODO Active and Passive skills
     
     public string Name {set; get; } = "Entity";
+    public bool isAlive {set; get; } = true;
 
     private int _hp = 1;
     public int HP {
@@ -19,9 +22,9 @@ public class Entity  {
     }
     
     private int _atk = 1;
-    public int BaseATK {
+    public int ATK {
         set {
-            if(value <= 0) {
+            if(value < 0) {
                 throw new Exception("ERROR: invalid ATK value.");
             }
             else {
@@ -32,7 +35,7 @@ public class Entity  {
     }
 
     private int _def = 0;
-    public int BaseDEF {
+    public int DEF {
         set {
             if(value < 0) {
                 throw new Exception("ERROR: invalid DEF value.");
@@ -44,7 +47,20 @@ public class Entity  {
         get => _def;
     }
 
-    public bool isAlive {set; get; } = true;
 
+    // TODO: Destroying Entity if it's dead
+    public void checkIfAlive() {
+        if(isAlive == false) {
+        }
+
+        if(HP == 0) {
+            isAlive = false;
+        } 
+    }
+    
+    // TODO
+    public void takeDamage(int takenDamage) {
+
+    }
 
 }
